@@ -1,10 +1,6 @@
-Sure! Here's your content rewritten in a clean, spaced **Realme-style** format for better readability:
 
----
 
-## 📲 How to Use API with Postman
-
-### 1. ✅ Start the Server  
+### 1.  Start the Server  
 Open your terminal and run:  
 ```bash
 node yourfilename.js
@@ -12,7 +8,7 @@ node yourfilename.js
 
 ---
 
-### 2. 🚀 Open Postman  
+### 2.  Open Postman  
 - Click **New Tab**  
 - Select **Method (GET, POST, etc.)**  
 - Enter the **URL**  
@@ -20,11 +16,11 @@ node yourfilename.js
 
 ---
 
-## 🌐 API Endpoints
+##  API Endpoints
 
 ---
 
-### 📌 Create Task  
+###  Create Task  
 - **Method**: `POST`  
 - **URL**: `http://localhost:3000/tasks`  
 - **Body** → raw → **JSON**:
@@ -37,19 +33,19 @@ node yourfilename.js
 
 ---
 
-### 📋 Get All Tasks  
+###  Get All Tasks  
 - **Method**: `GET`  
 - **URL**: `http://localhost:3000/tasks`
 
 ---
 
-### 🔍 Get Task by ID  
+###  Get Task by ID  
 - **Method**: `GET`  
 - **URL**: `http://localhost:3000/tasks/{id}`
 
 ---
 
-### ✏️ Update Task  
+###  Update Task  
 - **Method**: `PUT`  
 - **URL**: `http://localhost:3000/tasks/{id}`  
 - **Body** → raw → **JSON**:
@@ -62,10 +58,9 @@ node yourfilename.js
 
 ---
 
-### ❌ Delete Task  
+###  Delete Task  
 - **Method**: `DELETE`  
 - **URL**: `http://localhost:3000/tasks/{id}`
 
 ---
 
-Let me know if you want this in a `README.md` or as a PDF/Word file!
