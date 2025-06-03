@@ -5,10 +5,8 @@ const { v4: uuidv4 } = require('uuid');
 const app = express();
 const port = 3000;
 
-
 pp.use(express.json());
 app.use(morgan('dev'));
-
 
 let tasks = [];
 app.get('/tasks', (req, res) => {
@@ -18,6 +16,7 @@ app.get('/tasks', (req, res) => {
   const end = start + limit;
   const paginatedTasks = tasks.slice(start, end);
 
+  
    res.status(200).json({
     total: tasks.length,
     page,
@@ -52,6 +51,7 @@ app.put('/tasks/:id', (req, res) => {
   const task = tasks.find(t => t.id === req.params.id);
   if (!task) return res.status(404).json({ error: 'Task not found' });
 
+  
   const { title, description } = req.body;
   if (!title || !description)
     return res.status(400).json({ error: 'Title and description are required' });
@@ -70,6 +70,6 @@ app.delete('/tasks/:id', (req, res) => {
   res.status(200).json({ message: 'Task deleted successfully' });
 });
 app.listen(port, () => {
-  console.log(`🚀 Server running on http://localhost:${port}`);
+  console.log(`Server running on http://localhost:${port}`);
 }
 );
